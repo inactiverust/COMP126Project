@@ -8,12 +8,13 @@
     font-style: normal;
 
 
-    --primary_color: #023047;
-    --secondary_color: #d260ce;
+    --primary_color: #1c1c1c ;
     --accent: #4f7be0;
-    --text-color-1: white;
-    --text-color-2: black;
-    --background-color: white;
+    --secondary_accent: #d260ce;
+    --text-color-1: #1c1c1c;
+    --text-color-2: #ffffff;
+    --background-color: #F4F4F4;
+    --content-cards: #E0E0E0;
 }
 
 body
@@ -32,7 +33,7 @@ header
     height: 10vh;
     width: 90%;
     background-color: var(--primary_color);
-    color: var(--text-color-1);
+    color: var(--text-color-2);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -53,13 +54,13 @@ header
 
 .nav-collapse a, .nav-expand a
 {
-    color: var(--accent);
+    color: var(--text-color-2);
     text-decoration: none;
 }
 
 .nav-collapse a:hover, a:focus, .nav-expand a:hover, a:focus
 {
-    color: var(--secondary_color);
+    color: var(--accent);
 }
 
 #custom-toggle
@@ -109,7 +110,7 @@ header
     gap: 10px;
     display: flex;
     flex-direction: column;
-    background-color: var(--background-color);
+    background-color: var(--content-cards);
     width: 90%;
     height: 30vh;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -119,10 +120,10 @@ header
 
 .welcome-box a
 {
-    background-color: var(--primary_color);
+    background-color: var(--accent);
     border-radius: 10px;
     padding: 3%;
-    color: var(--accent);
+    color: var(--text-color-2);
     text-decoration: none;
     transition: background-color 500ms;
 }
@@ -130,7 +131,7 @@ header
 .welcome-box a:hover, a:focus
 {
     color: var(--text-color-2);
-    background-color: var(--accent);
+    background-color: var(--secondary_accent);
 }
 
 .form-box
@@ -139,7 +140,7 @@ header
     gap: 10px;
     display: flex;
     flex-direction: column;
-    background-color: var(--background-color);
+    background-color: var(--content-cards);
     width: 90%;
     height: 45vh;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -169,15 +170,14 @@ header
 {
     width: 100%;
     height: 20%;
-    color: var(--accent);
-    background-color: var(--primary_color);
+    color: var(--text-color-2);
+    background-color: var(--accent);
     transition: background-color 500ms;
 }
 
 .form-box input[type="submit"]:hover, input[type="submit"]:focus
 {
-    background-color: var(--accent);
-    color: black;
+    background-color: var(--secondary_accent);
 }
 
 .image-box
@@ -186,7 +186,7 @@ header
     gap: 10px;
     display: flex;
     flex-direction: column;
-    background-color: var(--background-color);
+    background-color: var(--content-cards);
     width: 90%;
     height: 80vh;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
