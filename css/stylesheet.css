@@ -288,6 +288,25 @@ footer
         display: flex;
         flex-direction: row;
     }
+    /*home page desktop styling*/
+    .home-main-container
+    {
+        height: 75vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome-box
+    {
+        width: 40%;
+    }
+    
+    .soundcloud-box
+    {
+        width: 40%;
+    }
 
     /*contact html desktop styling */
     .contact-main-container
@@ -337,7 +356,7 @@ footer
 
     .testimonial-area
     {
-        overflow-y: auto;
+        overflow-y: hidden;
     }
     /* end contact desktop styling */
 }
