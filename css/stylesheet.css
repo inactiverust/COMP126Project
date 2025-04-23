@@ -83,7 +83,7 @@ header
 {
     margin-top: 2.5vh;
     margin-bottom: 2.5vh;
-    height: 150vh;
+    height: 200vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -99,7 +99,7 @@ header
     flex-direction: column;
     background-color: var(--content-cards);
     width: 90%;
-    height: 40%;
+    height: 30%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     align-items: center;
     justify-content: center;
@@ -115,14 +115,43 @@ header
     flex-direction: column;
     background-color: var(--content-cards);
     width: 80%;
-    height: 35%;
+    height: 30%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.welcome-box a
+.previous-event-box
+{
+    padding: 5%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--content-cards);
+    width: 80%;
+    height: 35%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.home-image-container-box
+{
+    gap: 10px;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.home-image-container-box img
+{
+    height: 100%;
+}
+
+.home-main-container a
 {
     background-color: var(--accent);
     border-radius: 10px;
@@ -132,7 +161,7 @@ header
     transition: background-color 500ms;
 }
 
-.welcome-box a:hover, a:focus
+.home-main-container a:hover, a:focus
 {
     color: var(--text-color-2);
     background-color: var(--secondary_accent);
@@ -187,7 +216,7 @@ header
 
 .form-box input[type="text"], input[type="email"]
 {
-    width: 100%;
+    width: 95%;
     height: 10%;
     border: solid;
     border-radius: 5px;
@@ -195,7 +224,7 @@ header
 
 .form-box textarea
 {
-    width: 100%;
+    width: 95%;
     border: solid;
     border-radius: 5px;
 }
@@ -207,7 +236,7 @@ header
 
 .form-box input[type="submit"]
 {
-    width: 100%;
+    width: 95%;
     height: 20%;
     color: var(--text-color-2);
     background-color: var(--accent);
@@ -233,7 +262,7 @@ footer
     justify-content: center;
 }
 
-@media screen and (min-aspect-ratio: 1/1) 
+@media screen and (min-aspect-ratio: 1/0.9) 
 {
     #custom-toggle
     {
