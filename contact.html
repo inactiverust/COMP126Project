@@ -13,10 +13,17 @@
     <link rel="stylesheet" href="css/stylesheet.css">
 
 </head>
-<!--Test TestCommit-->
+
+<style>
+    body
+    {
+        overflow: hidden;
+    }
+</style>
+
 <body>
     <header>
-        <h1>My Website</h1>
+        <img src="img/logo.png" alt="Logo" id="logo">
         <img src="img/icons/hamburger.jpg" alt="Menu" id="custom-toggle">
 
         <nav class="nav-expand">
@@ -37,10 +44,64 @@
             <li><a href="about.html">About</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="rentals.html"></a>Rentals</li>
+            <li><a href="rentals.html">Rentals</a></li>
         </ul>
     </nav>
 
+    <div class = "contact-main-container">
+        <div class = "form-box">
+            <h1>Contact Us!</h1>
+            <h3>Use the form below to get in touch for bookings, equipment rentals, or general questions. We usually respond within 24 hours.</h3>
+            <form id="contactform">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="6" required>Your Message Here</textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class = "form-info">
+            <img src="img/Maw.JPG" alt="portrait">
+
+            <div class = form-info-testimonials>
+                <h1>Customer Statements:</h1>
+                <div class="testimonial-area">
+                    <p1>
+                        “Absolutely incredible experience. The music was spot-on the entire night and kept everyone on the dance floor until the last song.”<br>
+                        — Jessica M., Wedding Client
+                        </p1><br><br>
+                        
+                        <p1>
+                        “Professional setup, smooth transitions, and exactly the kind of vibe we wanted for our company event. Highly recommended.”<br>
+                        — David L., Event Planner
+                        </p1><br><br>
+                        
+                        <p1>
+                        “They read the crowd perfectly. The energy kept building all night — best party we've thrown in years.”<br>
+                        — Monica P., Birthday Bash Host
+                        </p1><br><br>
+                        
+                        <p1>
+                        “Easy to work with, on time, and the sound quality was excellent. The custom playlist was a great touch.”<br>
+                        — Aaron T., Private Party Client
+                        </p1><br><br>
+                        
+                        <p1>
+                        “We were so impressed with the professionalism and quality. The ceremony music and reception sets were flawless.”<br>
+                        — Rachel & Chris, Newlyweds
+                        </p1><br><br>
+                        
+                        <p1>
+                        “The lighting setup was amazing and took our school dance to the next level. Everyone had a blast.”<br>
+                        — Marcus J., High School Faculty
+                        </p1><br><br>
+                    </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <p1>&#169 COMP 126</p1>
@@ -63,19 +124,13 @@
     const form = e.target;
     const formData = new FormData(form);
     const data = new URLSearchParams(formData);
+    
+    location.reload();
 
     const response = await fetch("https://script.google.com/macros/s/AKfycbwZK44eO-2mwy0jKjWkZEw0B4CHudQBNiz3H7THj2MNdtHnS-IJKK8F0hStZ8EZ9V9HqA/exec", 
     {
         method: "POST",
         body: data
     });
-    
-    if (response.ok)
-    {
-        form.reset();
-        alert("Message Sent!");
-    }
-    else
-        alert("Message Failed.");
   });
 </script>
