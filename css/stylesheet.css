@@ -293,20 +293,27 @@ footer
     {
         height: 75vh;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
 
     .welcome-box
     {
-        width: 40%;
+        width: 90%;
+        height: 70%;
     }
     
     .soundcloud-box
     {
-        width: 40%;
+        width: 90%;
+        height: 30%;
     }
+
+    .home-image-container-box
+    {
+        width: 50%;
+    }
+    /* end home page styling*/ 
 
     /*contact html desktop styling */
     .contact-main-container
