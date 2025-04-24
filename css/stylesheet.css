@@ -17,9 +17,20 @@
     --content-cards: #e0e0e0a6;
 }
 
-h1, h2
+h1, h2  
 {
     font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: clamp(1.5rem, 3vh, 2.5rem);
+}
+
+h3
+{
+    font-size: clamp(1.25rem, 2vh, 2rem);
+}
+
+p
+{
+    font-size: clamp(1.0rem, 2vh, 1.75rem);
 }
 
 body
@@ -117,6 +128,7 @@ header
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .soundcloud-box
@@ -133,6 +145,7 @@ header
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .previous-event-box
@@ -148,6 +161,7 @@ header
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
+    overflow: hidden;
 }
 
 .home-image-container-box
@@ -195,6 +209,7 @@ header
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .form-box
@@ -207,6 +222,7 @@ header
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .form-info
