@@ -63,35 +63,35 @@
                 <h1>Customer Statements:</h1>
                 <div class="testimonial-area" id="scroll-box">
                     <div id="scroll-content">
-                        <p1>
+                        <p>
                             “Absolutely incredible experience. The music was spot-on the entire night and kept everyone on the dance floor until the last song.”<br>
                             — Jessica M., Wedding Client
-                            </p1><br><br>
+                            </p><br><br>
                             
-                            <p1>
+                            <p>
                             “Professional setup, smooth transitions, and exactly the kind of vibe we wanted for our company event. Highly recommended.”<br>
                             — David L., Event Planner
-                            </p1><br><br>
+                            </p><br><br>
                             
-                            <p1>
+                            <p>
                             “They read the crowd perfectly. The energy kept building all night — best party we've thrown in years.”<br>
                             — Monica P., Birthday Bash Host
-                            </p1><br><br>
+                            </p><br><br>
                             
-                            <p1>
+                            <p>
                             “Easy to work with, on time, and the sound quality was excellent. The custom playlist was a great touch.”<br>
                             — Aaron T., Private Party Client
-                            </p1><br><br>
+                            </p><br><br>
                             
-                            <p1>
+                            <p>
                             “We were so impressed with the professionalism and quality. The ceremony music and reception sets were flawless.”<br>
                             — Rachel & Chris, Newlyweds
-                            </p1><br><br>
+                            </p><br><br>
                             
-                            <p1>
+                            <p>
                             “The lighting setup was amazing and took our school dance to the next level. Everyone had a blast.”<br>
                             — Marcus J., High School Faculty
-                            </p1><br><br>
+                            </p><br><br>
                     </div>
                 </div>
             </div>
@@ -99,7 +99,7 @@
     </div>
 
     <footer>
-        <p1>&#169 COMP 126</p1>
+        <p>&#169 COMP 126</p>
     </footer>
 
     <script>
@@ -134,17 +134,22 @@
     const scrollBox = document.getElementById("scroll-box");
     const scrollContent = document.getElementById("scroll-content");
 
+    // Duplicate content for seamless scroll
     scrollContent.innerHTML += scrollContent.innerHTML;
 
-    let scrollSpeed = 0.34;
+    let scrollSpeed = 1;
 
     function autoScroll() {
-    scrollBox.scrollTop += scrollSpeed;
-    if (scrollBox.scrollTop >= scrollContent.scrollHeight / 2) {
-        scrollBox.scrollTop = 0;
-    }
-    requestAnimationFrame(autoScroll);
+        // If we've scrolled past the first half of the duplicated content
+        if (scrollBox.scrollTop >= scrollContent.scrollHeight / 2) {
+            scrollBox.scrollTop = 0; // Reset scroll position to top
+        } else {
+            scrollBox.scrollTop += scrollSpeed; // Scroll smoothly
+        }
+
+        requestAnimationFrame(autoScroll);
     }
 
+    // Start the scrolling
     autoScroll();
 </script>

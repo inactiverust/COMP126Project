@@ -27,11 +27,19 @@ body
     background-color: var(--background-color);
 }
 
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
 /* start header styling */
 header
 {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
     height: 10vh;
     width: 90%;
     background-color: var(--primary_color);
@@ -294,26 +302,39 @@ footer
     .home-main-container
     {
         height: 75vh;
-        flex-direction: row;
+        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        align-items: space-evenly;
     }
 
     .welcome-box
     {
-        width: 90%;
-        height: 70%;
+        width: 30%;
+        height: 60%;
     }
     
     .soundcloud-box
     {
-        width: 90%;
+        padding: 0;
+        width: 30%;
         height: 30%;
     }
 
+
+    .previous-event-box
+    {
+        width: 65%;
+        height: 90%;
+        padding: 0;
+    }
     .home-image-container-box
     {
-        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
     }
     /* end home page styling*/ 
 
