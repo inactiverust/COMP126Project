@@ -348,7 +348,58 @@ header
     overflow: hidden;
 }
 
+.dj-photo {
+    width: 80%;
+    height: auto;
+    margin-top: 1rem;
+    object-fit: cover;
+}
+
+
 /* end about styling */
+
+/* start rentals styling */
+.rental-containers
+{
+    background-color: var(--background-color);
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.rental-photo 
+{
+    width: 30%;
+    height: auto;
+    margin-top: 1rem;
+    object-fit: cover;
+}
+
+.rental-containers a 
+{
+    background-color: var(--accent);
+    border-radius: 10px;
+    padding: 3%;
+    color: var(--text-color-2);
+    text-decoration: none;
+    transition: background-color 500ms;
+}
+
+.rental-containers a:hover, a:focus
+{
+    color: var(--text-color-2);
+    background-color: var(--secondary_accent);
+}
+
+/* end rentals styling */
+
 
 footer
 {
