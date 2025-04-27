@@ -382,6 +382,22 @@ header
     object-fit: cover;
 }
 
+.dj-board-photo 
+{
+    width: 80%;
+    height: auto;
+    margin-top: 1rem;
+    object-fit: cover;
+}
+
+.lights-photo 
+{
+    width: 50%;
+    height: auto;
+    margin-top: 1rem;
+    object-fit: cover;
+}
+
 .rental-containers a 
 {
     background-color: var(--accent);
