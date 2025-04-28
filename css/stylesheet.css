@@ -334,23 +334,49 @@ header
 
 /* start about styling */
 
-.about-containers
+.about-main-container
 {
     background-color: var(--background-color);
-    padding-top: 2.5vh;
-    padding-bottom: 2.5vh;
-    height: 75vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    height: 200vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 15px;
+}
+
+.about-container
+{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--content-cards);
+    width: 90%;
+    height: 40%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    overflow: auto;
+}
+
+.dj-card
+{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--content-cards);
+    width: 90%;
+    height: 25%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: space-evenly;
     overflow: hidden;
 }
 
 .dj-photo {
-    width: 80%;
-    height: auto;
+    height: 60%;
     margin-top: 1rem;
     object-fit: cover;
 }
@@ -359,13 +385,27 @@ header
 /* end about styling */
 
 /* start rentals styling */
-.rental-containers
+.rental-main-container
 {
     background-color: var(--background-color);
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    height: 250vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.rental-containers
+{
+    background-color: var(--content-cards);
     padding-top: 2.5vh;
     padding-bottom: 2.5vh;
-    height: 75vh;
-    width: 100%;
+    height: 17%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -373,27 +413,9 @@ header
     overflow: hidden;
 }
 
-
-.rental-photo 
+.rental-containers img
 {
-    width: 30%;
-    height: auto;
-    margin-top: 1rem;
-    object-fit: cover;
-}
-
-.dj-board-photo 
-{
-    width: 80%;
-    height: auto;
-    margin-top: 1rem;
-    object-fit: cover;
-}
-
-.lights-photo 
-{
-    width: 50%;
-    height: auto;
+    height: 50%;
     margin-top: 1rem;
     object-fit: cover;
 }
@@ -546,5 +568,82 @@ footer
         overflow-y: hidden;
     }
     /* end contact desktop styling */
+
+    /*begin about us desktop styling */
+
+    .about-main-container
+    {
+        background-color: var(--background-color);
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+        height: 75vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .about-container
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--content-cards);
+        width: 40%;
+        height: 90%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        overflow: auto;
+    }
+
+    .dj-card
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--content-cards);
+        width: 40%;
+        height: 40%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        align-items: center;
+        justify-content: space-evenly;
+        overflow: hidden;
+    }
+    /* end about us desktop styling */
+
+    /*start rentals desktop styling*/
+    .rental-main-container
+    {
+        background-color: var(--background-color);
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+        height: 75vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .rental-containers
+    {
+        background-color: var(--content-cards);
+        padding-top: 2.5vh;
+        padding-bottom: 2.5vh;
+        height: 40%;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    /*end rentals desktop styling */
 }
   
