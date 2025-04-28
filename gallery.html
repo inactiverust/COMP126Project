@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/stylesheet.css">
 
 </head>
-<!--Test TestCommit-->
+
 <body>
     <header>
         <img src="img/logo.png" alt="Logo" id="logo">
@@ -24,7 +24,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html" id="active">Gallery</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
             </ul>
@@ -36,7 +36,7 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html" id="active">Gallery</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="rentals.html">Rentals</a></li>
         </ul>
@@ -50,22 +50,23 @@
                 <img src="img/flyer2.jpg" alt="Flyer 2">
                 <img src="img/flyer3.jpg" alt="Flyer 3">
                 <img src="img/flyer4.jpg" alt="Flyer 4">
-                <video src="img/flyer5.mov" alt="Flyer 5" autoplay loop></video>
+                <video src="img/flyer5.mov" autoplay loop></video>
                 <img src="img/flyer6.jpg" alt="Flyer 6">
             </div>
         </div>
     </div>
 
     <footer>
-        <p1>&#169 COMP 126</p1>
+        <p>&#169; DJ Business Casual</p>
     </footer>
 
-    <script>
-        var nav = responsiveNav(".nav-collapse", { // Selector
-        animate: true, // Boolean: Use CSS3 transitions, true or false
-        customToggle: "#custom-toggle", // Selector: Specify the ID of a custom toggle
-        });
-    </script>
+<script>
+    var nav = responsiveNav(".nav-collapse", { // Selector
+    animate: true, // Boolean: Use CSS3 transitions, true or false
+    customToggle: "#custom-toggle", // Selector: Specify the ID of a custom toggle
+    });
+</script>
+
 </body>      
   
 </html>

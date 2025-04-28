@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -25,7 +25,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html" id="active">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
             </ul>
         </nav>
@@ -37,7 +37,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html" id="active">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
             <li><a href="rentals.html">Rentals</a></li>
         </ul>
     </nav>
@@ -100,18 +100,15 @@
     </div>
 
     <footer>
-        <p>&#169 COMP 126</p>
-    </footer>
-
-    <script>
-        var nav = responsiveNav(".nav-collapse", { // Selector
-        animate: true, // Boolean: Use CSS3 transitions, true or false
-        customToggle: "#custom-toggle", // Selector: Specify the ID of a custom toggle
-        });
-    </script>
-</body>      
+        <p>&#169; DJ Business Casual</p>
+    </footer>    
   
-</html>
+<script>
+    var nav = responsiveNav(".nav-collapse", { // Selector
+    animate: true, // Boolean: Use CSS3 transitions, true or false
+    customToggle: "#custom-toggle", // Selector: Specify the ID of a custom toggle
+    });
+</script>
 
 <script>
   document.getElementById("contactform").addEventListener("submit", async function (e) {
@@ -154,3 +151,7 @@
     // Start the scrolling
     autoScroll();
 </script>
+</body>  
+</html>
+
+

@@ -17,7 +17,7 @@
     --content-cards: #e0e0e0a6;
 }
 
-#active
+.active
 {
     color: var(--secondary_accent);
 }
@@ -199,6 +199,12 @@ header
 {
     color: var(--text-color-2);
     background-color: var(--secondary_accent);
+}
+
+.soundcloud-box iframe
+{
+    height: 30%;
+    width: 80%;
 }
 /* end home page styling */
 
@@ -484,7 +490,7 @@ footer
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: space-evenly;
+        align-items: center;
     }
 
     .welcome-box
