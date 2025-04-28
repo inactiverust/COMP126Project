@@ -17,11 +17,6 @@
     --content-cards: #e0e0e0a6;
 }
 
-.active
-{
-    color: var(--secondary_accent);
-}
-
 h1, h2  
 {
     font-family: "Special Gothic Expanded One", sans-serif;
